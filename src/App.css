@@ -1,0 +1,133 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #ffffff;
+  height: 100%;
+}
+
+.hero-container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #ffffff;
+  height: 100vh;
+  width: 100vw;
+  background-image: url('/rhisomebg.svg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 200px;
+}
+
+
+.main-heading {
+  font-size: 240px;
+  font-weight: 400;
+  color: #3C533F;
+  line-height: 260px;
+  position: relative;
+  z-index: 1;
+  text-transform: uppercase;
+  margin: 0;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  animation: fadeDown 0.5s ease-out forwards;
+}
+
+
+.astronaut {
+  width: 393px;
+  height: 553px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(40%);
+  z-index: 1;
+}
+
+
+ 
+.icon {
+  position: absolute;
+  width: 50px;
+  opacity: 0; 
+  animation: float 4s infinite ease-in-out, fadeInIcons 0.5s ease-out forwards;
+  animation-delay: 0s, 0.6s; 
+  z-index: 1;
+}
+
+.icon1 {
+  top: 40%;
+  left: 20%;
+  width: 156px;
+  height: 132px;
+  animation: fadeInIcons 0.5s ease-out forwards, float 4s ease-in-out infinite;
+  animation-delay: 0.6s, 1.2s;
+}
+.icon2 { 
+  bottom: 20%; 
+  right: 25%; 
+  width: 145px;
+  height: 155px;
+  animation: fadeInIcons 0.5s ease-out forwards, float 4s ease-in-out infinite; 
+  animation-delay: 0.6s, 1.2s;
+}
+.icon3 {
+   bottom: 20%; 
+   left: 30%;
+   animation: fadeInIcons 0.5s ease-out forwards, float 4s ease-in-out infinite;
+   width: 138px;
+   height: 151px; 
+  animation-delay: 0.6s, 1.2s; 
+}
+.icon4 {
+   top: 35%; 
+   right: 20%;
+   width: 138px;
+   height: 151px; 
+   animation: fadeInIcons 0.5s ease-out forwards, float 4s ease-in-out infinite;
+   animation-delay: 0.6s, 1.2s; 
+  }
+.icon5 {
+   top: 50%; 
+   left: 50%;
+   animation: fadeInIcons 0.5s ease-out forwards, float 4s ease-in-out infinite;
+   animation-delay: 0.6s, 1.2s;
+   }
+
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+
+@keyframes fadeDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes fadeInIcons {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
