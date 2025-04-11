@@ -1,9 +1,11 @@
 body, html {
-  margin: 0;
-  padding: 0;
-  font-family: 'Arial', sans-serif;
-  background-color: #ffffff;
-  height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    height: 100%;
+    overflow-x: hidden; 
 }
 
 .hero-container {
@@ -20,15 +22,15 @@ body, html {
   flex-direction: column;
   text-align: center;
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
   align-items: center;
   justify-content: flex-start;
-  padding-top: 200px;
+  padding-top: 100px;
 }
 
 
 .main-heading {
-  font-size: 240px;
+  font-size: 200px;
   font-weight: 400;
   color: #3C533F;
   line-height: 260px;
@@ -42,15 +44,29 @@ body, html {
 
 
 .astronaut {
-  width: 393px;
-  height: 553px;
+  width: 353px;
+  height: 550px;
+  margin-top: -180px;
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translateX(-50%) translateY(40%);
+  padding-bottom: 40px;
+  transform: translateX(-50%) translateY(60%);
   z-index: 1;
+  
 }
 
+@keyframes float1 {
+  0% {
+    transform: translateX(-50%) translateY(40%);
+  }
+  50% {
+    transform: translateX(-50%) translateY(35%);
+  }
+  100% {
+    transform: translateX(-50%) translateY(40%);
+  }
+}
 
  
 .icon {
@@ -130,4 +146,20 @@ body, html {
     opacity: 1;
     transform: scale(1);
   }
+}
+.custom-button {
+  width: 253px;
+  height: 52px; 
+  border-radius: 9px;
+  background-color: #3C533F; 
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+  margin-top: 120px;
+}
+.button-wrapper {
+  margin-bottom: 80px;
 }
