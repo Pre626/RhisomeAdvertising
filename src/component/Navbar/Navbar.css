@@ -1,114 +1,122 @@
 * {
-    margin: 0;
-    padding: 0;
-   
-  }
-  
-  .navbar {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    background-color: white;
-    z-index: 1000;
-  }
-  
-  .navbar-inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 40px;
-    max-width: 1300px;
-    margin: 0 auto;
-    position: relative;
-  }
-  
-  .navbar-section {
-    flex: 1;
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo {
-    gap: 10px;
-    margin-left: 100px;
-  }
-  
-  .logo img {
-    width: 90px;
-    height: 60px;
-    height: auto;
-  }
-  
-  .logo-text {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-  }
-  
-  .logo-text h2 {
-    font-size: 18px;
-    color: #2c3e2e;
-    font-weight: 700;
-  }
-  
-  .logo-text p {
-    font-size: 10px;
-    letter-spacing: 1px;
-    color: #2c3e2e;
-  }
-  
-  .nav-links {
-    list-style: none;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Montserrat', sans-serif;
-    margin-right: 90px;
-    gap: 40px;
-    font-weight: 700;
-    font-size: 16px;
-    color: #000000;
-    white-space: nowrap;
-  }
-  
-  .nav-links li {
-    cursor: pointer;
-    transition: color 0.3s ease;
-    position: relative;
-    transition: color 0.3s ease;
-  }
-  .nav-links li::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -4px;
-    width: 0%;
-    height: 1px;
-    background-color: #000000; 
-    transition: width 0.4s ease;
-  }
-  
-  .nav-links li:hover::after {
-    width: 100%;
-  }
-  
-  
-  .right {
-    justify-content: flex-end;
-  }
-  
-  .contact-button {
-    background-color: #3C533F;
-    color: white;
-    border: none;
-    padding: 12px 24px;
-    font-size: 14px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    margin-right: 120px;
-    height: 40px;
-    width: 160px;
-    cursor: pointer;
-    text-align: center;
-    border-radius: 0;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Navbar base styling */
+.navbar {
+  position: sticky; 
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+}
+
+/* Flex container */
+.navbar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 15px 40px;
+}
+
+/* Sections */
+.navbar-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+/* Logo styling */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 100px;
+}
+
+.logo img {
+  width: 90px;
+  height: 60px;
+  object-fit: contain;
+  display: block;
+}
+
+/* Logo text */
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.logo-text h2 {
+  font-size: 18px;
+  color: #2c3e2e;
+  font-weight: 700;
+}
+
+.logo-text p {
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: #2c3e2e;
+}
+
+/* Nav links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 90px;
+  gap: 40px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #000000;
+}
+
+.nav-links li {
+  cursor: pointer;
+  position: relative;
+ 
+}
+
+.nav-links li::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 1px;
+  background-color: #000000;
+  transition: width 0.4s ease;
+}
+
+.nav-links li:hover::after {
+  width: 100%;
+}
+
+/* Right section */
+.right {
+  justify-content: flex-end;
+}
+
+.contact-button {
+  background-color: #3C533F;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-right: 120px;
+  height: 40px;
+  width: 160px;
+  cursor: pointer;
+  text-align: center;
+}

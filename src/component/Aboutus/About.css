@@ -1,0 +1,149 @@
+.about-section {
+    background-image: url('/rhisomebg.svg');
+    padding: 4rem 2rem;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .text-content {
+    max-width: 55%;
+    position: relative;
+  }
+  
+  .about-heading {
+    position: relative;
+    display: inline-block;
+    margin-left: 120px;
+  }
+  
+  .about-heading h2 {
+    font-size: 80px;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #3C533F;
+    margin: 0;
+    line-height: 1;
+  }
+  
+  .floating-icon {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  .left-icon {
+    left: -30px;
+    top: 0;
+  }
+  
+  .right-icon {
+    right: -30px;
+    top: 0;
+  }
+  
+  .about-desc {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-top: 1.2rem;
+    color: #3C533F;
+    margin-left: 120px;
+  }
+  
+  .cards {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .about-card {
+    position: relative;         
+    width: 357px;
+    height: 207px;
+    left: 120px;
+    background: #3C533F;
+    border-radius: 16px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    padding: 1.5rem;
+    margin-left: 0;              /* Remove margin-left if you're using left positioning */
+    flex: none;                  /* Prevent it from resizing in flex container */
+  }
+  .about-card p {
+    font-size: 11px;
+    color: #fff; 
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.3px;
+    margin-top: 0.5rem;
+    transition: all 0.3s ease;
+  }
+
+  .about-card h3 {
+    font-size: 32px;
+    margin-bottom: 0.8rem;
+  }
+  
+  .about-card p {
+    font-size: 14px;
+    line-height: 21px;
+    width: 100%;        
+    max-width: 100%; 
+  }
+  
+  .about {
+    width: 500px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+  .astronaut img {
+    width: 100%;
+    max-width: 320px;
+    animation: float 4s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .about-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .text-content, .astronaut {
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    .cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .card-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Keep content aligned from left */
+    gap: 14px; /* Space between text and icon */
+    
+  }
+  
+  .card-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }

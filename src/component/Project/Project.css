@@ -1,0 +1,103 @@
+.projects-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 80px;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .projects-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 200px;
+  }
+  
+  .vertical-heading {
+    margin-left: 40px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 100px;
+    font-family: 'Impact', sans-serif;
+    color: #3c533f;
+    margin-bottom: 20px;
+  }
+  
+  .icon-thumb {
+    top: 180px;
+    left: 40px; 
+  }
+  
+  .icon-heart {
+    top: 360px;
+    left: 140px; 
+  }
+  
+ 
+  .icon-comment{
+    top:10px;
+    left: 140px; 
+  }
+  .projects-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  .gallery-item2{
+    margin-top: -140px;
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .projects-right {
+    background-color: #f2e4ce;
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 300px;
+  }
+  
+  .projects-right h3 {
+    font-family: 'Impact', sans-serif;
+    font-size: 28px;
+    color: #3c533f;
+    margin-bottom: 20px;
+  }
+  
+  .projects-right p {
+    font-family: 'Montserrat', sans-serif;
+    color: #3c533f;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .see-more {
+    background-color: #3c533f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+  }
+  
+  .astro-img {
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+  }
+  

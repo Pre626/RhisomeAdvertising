@@ -1,0 +1,199 @@
+.services-section-why {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fff;
+  padding: 50px 30px;
+  gap: 40px;
+  justify-content: center;
+}
+
+.services-left {
+  flex: 1 1 300px;
+  max-width: 500px;
+  position: relative;
+}
+
+.services-title1 {
+  padding-top: 120px;
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #639E68;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-left: 120px;
+  white-space: nowrap;
+  line-height: 12px;
+}
+.rhisome-head{
+  font-size: 80px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color :#3C533F;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-left: 120px;
+}
+
+.services-desc {
+  margin-left: 140px;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #3C533F;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.whychoose-image {
+  width: 120px;
+  margin-top: -60px;
+}
+
+.icon-like, .icon-heart {
+  font-size: 20px;
+  position: absolute;
+  color: #ff5c8d;
+}
+
+.icon-like {
+  top: 0;
+  left: 0;
+  color: #3b82f6;
+}
+
+.icon-heart {
+  bottom: 10px;
+  left: 100px;
+  color: #f43f5e;
+}
+
+.services-right {
+  flex: 2 1 500px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  justify-content: center;
+}
+.left-column,
+.right-column {
+  display: flex;
+  flex-direction: column;
+}
+/* Only apply row gap to right column cards */
+.right-column .why-card:not(:last-child) {
+  margin-bottom: 15px; /* Reduce this to make the row gap smaller */
+}
+.left-column .why-card:not(:last-child) {
+  margin-bottom: 15px; /* Reduce this to make the row gap smaller */
+}
+
+.services-right > .why-card:nth-child(5) {
+  grid-column: 2; /* Places it in the right column */
+}
+.force-right-column {
+  grid-column: 2;
+}
+
+/* Base card styling */
+.why-card { 
+  background-color:#3C533F;
+  font-weight: 400;
+  line-height: 35px;
+  font-size: 28px;
+  text-transform: uppercase;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: white;
+  margin-left: 60px;
+  padding: 20px;
+  width: 384px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  
+}
+
+/* Custom sizes */
+.small-card {
+  width: 384px;
+  height: 254px;
+}
+
+.extrasmall-card {
+  width: 384px;
+  height: 180px;
+}
+
+
+
+
+.service-card h3 {
+  font-weight: 400;
+  font-size: 40px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-bottom: 10px;
+}
+
+.service-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.service-card li {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-family:'Montserrat', sans-serif;
+}
+
+.check-icon {
+  margin-right: 8px;
+  color: #58e68a;
+}
+@media (max-width: 768px) {
+  .services-right {
+    grid-template-columns: 1fr;
+  }
+}
+.title-with-astronaut {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* space between image and text */
+}
+
+.astronaut-image {
+  position: absolute;
+  left: 330px; 
+  top: 60px; 
+  width: 100px; 
+  z-index: 10;
+  width: 120px;
+  height: auto;
+}
+
+.services-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.service-top-paragraph {
+  font-size: 14px;
+  text-transform: lowercase;
+  font-family:'Montserrat', sans-serif;
+  color: #f0f0f0;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+
+.rooted-card {
+  background-color: #3C533F; 
+  width: 384px;
+  height: 254px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: white;
+  text-transform: uppercase;
+  font-size: 28px;
+  padding: 20px;
+  margin-top: 30px;
+  margin-left: 200px;
+  border-radius: 25px;
+  max-width: 350px;
+}
