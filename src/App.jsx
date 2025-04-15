@@ -8,6 +8,8 @@ import Homepage from "./pages/Homepage";
 import FrontPage from "./pages/FrontPage";
 import Why from "./component/whychoose/Why";
 import About from "./component/Aboutus/About";
+import Team from "./component/Team/Team";
+import Client from "./component/Client/Client";
 
 function AppWrapper() {
   const location = useLocation();
@@ -20,6 +22,8 @@ function AppWrapper() {
       {showLayout && <Service />}
       {showLayout && <Why />}
       {showLayout && <About />}
+      {showLayout && <Team />}
+      {showLayout && <Client />}
 
       <Routes>
         <Route path="/" element={<FrontPage />} />
