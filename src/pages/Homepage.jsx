@@ -7,6 +7,7 @@ import Why from "../component/whychoose/Why";
 import About from "../component/Aboutus/About";
 import Team from "../component/Team/Team";
 import Client from "../component/Client/Client";
+import Footer from "../component/Footer/Footer";
 
 import './Homepage.css'; 
 function Homepage() {
@@ -20,6 +21,7 @@ function Homepage() {
       <About />
       <Team />
       <Client/>
+      <Footer />
       </div>
     
   );

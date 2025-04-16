@@ -1,6 +1,6 @@
 .clients-section {
     background-image: url('/rhisomebg.svg');
-    padding: 40px 20px;
+    padding: 120px 120px; 
     text-align: center;
     font-family: sans-serif;
   }
@@ -18,7 +18,7 @@
   .clients-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 30px;
+    row-gap: 30px;    
     justify-items: center;
     align-items: center;
   }

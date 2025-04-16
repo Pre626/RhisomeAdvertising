@@ -10,6 +10,7 @@ import Why from "./component/whychoose/Why";
 import About from "./component/Aboutus/About";
 import Team from "./component/Team/Team";
 import Client from "./component/Client/Client";
+import Footer from "./component/Footer/Footer";
 
 function AppWrapper() {
   const location = useLocation();
@@ -24,6 +25,7 @@ function AppWrapper() {
       {showLayout && <About />}
       {showLayout && <Team />}
       {showLayout && <Client />}
+      {showLayout && <Footer />}
 
       <Routes>
         <Route path="/" element={<FrontPage />} />
