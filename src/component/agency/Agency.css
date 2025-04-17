@@ -6,7 +6,6 @@
 }
 
 .hero {
-  margin-top: 180px; /* height of your navbar */
   width: 100vw;
   min-height: 100vh;
   background-image: url('/rhisomebg.svg');
@@ -17,7 +16,6 @@
 
   /* padding INSIDE the hero section */
   padding: 80px 80px 120px;
-
   display: flex;
   align-items: center;
   justify-content: space-between;

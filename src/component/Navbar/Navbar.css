@@ -57,7 +57,7 @@ body {
 }
 
 .logo img {
-  width: 90px;
+  width: 60px;
   height: 60px;
   object-fit: contain;
   display: block;
@@ -92,6 +92,7 @@ body {
   gap: 40px;
   font-weight: 700;
   font-size: 16px;
+  margin-top: 10px;
   color: #000000;
 }
 
@@ -133,4 +134,8 @@ body {
   width: 160px;
   cursor: pointer;
   text-align: center;
+  border-radius: 0;
+}
+.arrow{
+   margin-left: 10px;
 }

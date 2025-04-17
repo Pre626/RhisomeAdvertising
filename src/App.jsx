@@ -1,37 +1,17 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
-import Navbar from './component/Navbar/Navbar';
-import Agency from './component/agency/Agency';
-import Service from './component/Service/Service'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Homepage from "./pages/Homepage";
 import FrontPage from "./pages/FrontPage";
-import Why from "./component/whychoose/Why";
-import About from "./component/Aboutus/About";
-import Team from "./component/Team/Team";
-import Client from "./component/Client/Client";
-import Footer from "./component/Footer/Footer";
+import AboutPage from "./pages/Aboutpage";
 
 function AppWrapper() {
-  const location = useLocation();
-  const showLayout = location.pathname === "/homepage";
-
   return (
-    <>
-      {showLayout && <Navbar />}
-      {showLayout && <Agency />}
-      {showLayout && <Service />}
-      {showLayout && <Why />}
-      {showLayout && <About />}
-      {showLayout && <Team />}
-      {showLayout && <Client />}
-      {showLayout && <Footer />}
-
-      <Routes>
-        <Route path="/" element={<FrontPage />} />
-        <Route path="/homepage" element={<Homepage />} />
-      </Routes>
-    </>
+    <Routes>
+      <Route path="/" element={<FrontPage />} />
+      <Route path="/homepage" element={<Homepage />} />
+      <Route path="/aboutpage" element={<AboutPage />} />
+    </Routes>
   );
 }
 
