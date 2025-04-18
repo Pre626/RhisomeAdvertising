@@ -1,8 +1,15 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
+import { FaAngleRight } from "react-icons/fa";
 
 function Navbar() {
+  const navigate = useNavigate();
+
+  const handleContactClick = () => {
+    navigate('/contactpage');
+  };
   return (
     <nav className="navbar">
       <div className="navbar-inner">
@@ -20,8 +27,8 @@ function Navbar() {
         </ul>
 
         <div className="navbar-section right">
-          <button className="contact-button">
-            Contact Us <span className="arrow">➔</span>
+          <button className="contact-button" onClick={handleContactClick}>
+            Contact Us <span className="arrow"><FaAngleRight /></span>
           </button>
         </div>
       </div>

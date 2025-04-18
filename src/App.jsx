@@ -6,6 +6,7 @@ import FrontPage from "./pages/FrontPage";
 import AboutPage from "./pages/Aboutpage";
 import Ourworkpage from "./pages/Ourworkpage";
 import ServicePage from "./pages/ServicePage";
+import ContactPage from "./pages/Contactpage";
 
 function AppWrapper() {
   return (
@@ -15,6 +16,7 @@ function AppWrapper() {
       <Route path="/aboutpage" element={<AboutPage />} />
       <Route path="/ourwork" element={<Ourworkpage />} />
       <Route path="/servicepage" element={<ServicePage />} />
+      <Route path="/contactpage" element={<ContactPage />} />
     </Routes>
   );
 }

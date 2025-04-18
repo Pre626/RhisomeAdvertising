@@ -1,0 +1,104 @@
+body, html {
+    overflow-x: hidden;
+  }
+  
+.contact-us-container {
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+  }
+  
+  /* Top Banner */
+  .contact-hero {
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 180px 20px;
+    background-image: url('/contact.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align:left;
+  }
+  
+
+  
+ 
+  .contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 60px 40px;
+    background-color: #fff;
+  }
+  
+  .contact-info {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 40px;
+  }
+  
+  .contact-subheading {
+    color: #2f674b;
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 120px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  
+  .contact-heading {
+    color: #9b5c1a;
+    font-size: 50px;
+    font-weight: 700;
+    margin-left: 120px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-text {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    margin-left: 120px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-address {
+    padding-top: 20px;
+    font-size: 16px;
+    line-height: 35px;
+    color: #000000;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-left: 120px;
+  }
+  
+  
+  
+  .map-container {
+    flex: 1;
+    width: 250px;
+    height: 350px;
+    margin-top: 20px;
+  }
+  
+  .map-container {
+    margin-top: 20px;
+    width: 100%;
+    height: 300px;
+  }
+  .home-icon {
+    color: #2f674b;
+    font-size: 20px; 
+    margin-right: 6px;
+  }
+  .phone-icon{
+    color: #2f674b;
+    font-size: 20px; 
+    margin-right: 6px;
+  }
+  .mail-icon{
+    color: #2f674b;
+    font-size: 20px; 
+    margin-right: 6px;
+  }
