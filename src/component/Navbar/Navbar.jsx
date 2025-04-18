@@ -15,8 +15,8 @@ function Navbar() {
         <ul className="navbar-section nav-links">
         <li><Link to="/">HOME</Link></li>
           <li><Link to = "/aboutpage">ABOUT</Link></li>
-          <li>OUR&nbsp;WORK</li>
-          <li>SERVICES</li>
+          <li><Link to ='/ourwork'>OUR&nbsp;WORK</Link> </li>
+          <li><Link to ='/servicepage'>SERVICES</Link></li>
         </ul>
 
         <div className="navbar-section right">

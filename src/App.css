@@ -29,6 +29,7 @@ body, html {
 
 
 .main-heading {
+  padding-top: 120px;
   font-size: 200px;
   font-weight: 400;
   color: #3C533F;
