@@ -54,4 +54,50 @@
     color: #495748;
     margin-top: 40px;
   }
-  
+  /* Responsive styles */
+@media (max-width: 768px) {
+  .founder-container {
+    flex-direction: column;
+    gap: 3rem;
+    text-align: center;
+  }
+
+  .founder-text .name {
+    font-size: 48px;
+    line-height: 1.2;
+  }
+
+  .founder-text h2 {
+    font-size: 20px;
+  }
+
+  .founder-text p {
+    font-size: 14px;
+    text-align: left;
+    line-height: 24px;
+    margin-top: 10px;
+  }
+
+  .founder-image img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .founder-section {
+    padding: 2rem 1rem;
+  }
+
+  .founder-text .name {
+    font-size: 36px;
+  }
+
+  .founder-text h2 {
+    font-size: 18px;
+  }
+
+  .founder-text p {
+    font-size: 13px;
+  }
+}

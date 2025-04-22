@@ -194,10 +194,11 @@ body, html {
   .main-heading {
     font-size: 80px;
     line-height: 100px;
-    padding-top: 100px;
+    padding-top: 140px;
   }
 
   .astronaut {
+    padding-top:20px;
     width: 200px;
     transform: translateX(-50%) translateY(80%);
   }

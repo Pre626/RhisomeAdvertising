@@ -111,4 +111,61 @@ html, body, #root {
     margin-left: auto; /* pushes the mission card to the right */
   }
 
-  
+  /* Mobile Responsive Styling */
+@media (max-width: 768px) {
+  .about-section1 {
+    padding: 60px 20px; /* Reduced padding */
+    text-align: left; /* Center align text on small screens */
+    background-position: center;
+  }
+
+  .about-container {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center; /* Center align items vertically */
+  }
+
+  .about-left {
+    min-width: unset;
+  }
+
+  .about-left h1 {
+    font-size: 36px; /* Smaller font */
+    text-align: left;
+  }
+
+  .about-left p {
+    font-size: 14px;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  .about-right {
+    align-items: center; /* Center the cards */
+  }
+
+  .about-card1 {
+    width: 90%; /* Full width with margin */
+    height: auto; /* Let height adjust naturally */
+    left: 0; /* Remove offset */
+    padding: 1.2rem;
+  }
+
+  .about-card1 h2 {
+    font-size: 28px;
+    justify-content: center;
+  }
+
+  .card-header {
+    text-align: left;
+  }
+
+  .card-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .move-right {
+    margin-left: 0;
+  }
+}

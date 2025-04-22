@@ -93,4 +93,41 @@
       height: auto;
     }
   }
-  
+  /* ✅ Responsive: Mobile View */
+@media (max-width: 768px) {
+  .services-grid1 {
+    grid-template-columns: 1fr; /* Single column */
+    margin-left: 0;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .service1 {
+    flex-direction: column; /* Stack image & content */
+    height: auto;
+    max-width: 100%;
+  }
+
+  .service-image1,
+  .service-content1 {
+    width: 100%;
+    height: auto;
+  }
+
+  .service-content1 {
+    padding: 16px;
+    text-align: center;
+  }
+
+  .service-content1 h3 {
+    font-size: 16px;
+  }
+
+  .service-content1 p {
+    font-size: 13px;
+  }
+
+  .see-details1 {
+    margin: 0 auto;
+  }
+}

@@ -46,4 +46,36 @@
     height: 200px;
     border-radius: 4px;
   }
+  @media (max-width: 768px) {
+    .gallery-container {
+      padding: 20px;
+      padding-bottom: 60px;
+    }
+  
+    .header2 {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+  
+    .all-btn {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  
+    .grid2 {
+      grid-template-columns: 1fr;
+      gap: 20px;
+      padding: 0;
+    }
+  
+    .card2 img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .card2 {
+      padding: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+  }
   

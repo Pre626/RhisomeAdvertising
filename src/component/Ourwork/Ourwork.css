@@ -89,4 +89,71 @@ body, html {
     50% { transform: translateY(-10px); }
     100% { transform: translateY(0px); }
   }
+  @media (max-width: 768px) {
+    .ourwork-container {
+      margin-top: -60px;
+      display: flex;
+      align-items: center;
+      background-image: url('/aboutimg.svg');
+      background-repeat: no-repeat;
+      background-position: center;         
+      background-size: 160%;         
+      padding: 40px;
+      height: auto;                        
+      min-height: 300px;     
+    }
+  
+    .text-section {
+      margin: 0 auto;
+      text-align: center;
+    }
+  
+    .ourwork-heading {
+      font-size: 28px;
+      text-align: left;
+      margin: 0 auto;
+      margin-top: -60px; /* 👈 use this instead of padding-top */
+    }
+  
+    .subheading {
+    margin: 10px auto;
+    max-width: 90%;
+    font-size: 8px; /* smaller font helps fit in fewer lines */
+    line-height: 12px;
+    text-align: left; /* optional for alignment */
+    word-wrap: break-word;
+    }
+  
+    .image-section {
+      margin: 20px auto 0;
+      text-align: center;
+    }
+  
+    .astronaut-img2 {
+      width: 180px;
+    height: 120px;
+    margin: 0 auto;
+    display: block;
+    }
+  
+    .emoji-icon {
+      width: 16px;
+      height: 16px;
+    }
+  
+    .emoji-icon.left {
+      top: -5px;
+      left: -10px;
+    }
+  
+    .emoji-icon.center {
+      top: -10px;
+      left: 60px;
+    }
+  
+    .emoji-icon.right {
+      top: 0;
+      left: 120px;
+    }
+  }
   

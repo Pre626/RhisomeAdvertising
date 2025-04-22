@@ -92,4 +92,47 @@ body, html {
     50% { transform: translateY(-10px); }
     100% { transform: translateY(0px); }
   }
+  @media (max-width: 768px) {
+    .service-container1 {
+      margin-top: -60px;
+      display: flex;
+      align-items: center;
+      background-image: url('/aboutimg.svg');
+      background-repeat: no-repeat;
+      background-position: center;         
+      background-size: 160%;         
+      padding: 40px;
+      height: auto;                        
+      min-height: 300px;                  
+    }
+
+  .service-heading1 {
+    font-size: 26px;
+    margin: 0 auto;
+    margin-top: -40px; /* 👈 use this instead of padding-top */
+  }
+
+  .subheading2 {
+    margin: 10px auto;
+    max-width: 90%;
+    font-size: 8px; /* smaller font helps fit in fewer lines */
+    line-height: 12px;
+    text-align: left;
+    word-wrap: break-word;
+  }
+
+  .image-section {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .astronaut-img3 {
+    width: 180px;
+    height: 120px;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
   
