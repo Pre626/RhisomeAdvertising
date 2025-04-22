@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import AboutImage from "../../../src/assets/logos/Aboutimg.png"; 
+
 const AboutUs = () => {
   return (
     <section className="about-section">
@@ -11,7 +11,7 @@ const AboutUs = () => {
           </div>
           <p className="about-desc">
           We’re not just a creative agency we’re your extended team. At Rhisome, 
-          <br />we believe in building partnerships, not collecting clients. From scroll-<br />
+          we believe in building partnerships, not collecting clients. From scroll-
           stopping reels to thumb stopping designs, we turn ideas into impact.
           </p>
           <div className="cards">
@@ -37,7 +37,7 @@ const AboutUs = () => {
         </div>
 
         <div className="about">
-          <img src={AboutImage} alt="Astronaut" />
+        <img src="/Aboutimg.png" alt="Astronaut" className="about-img" />
         </div>
       </div>
     </section>

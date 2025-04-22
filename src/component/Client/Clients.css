@@ -41,4 +41,30 @@
     height: 80px;
     object-fit: contain;
   }
-  
+  /* ✅ Mobile Responsiveness */
+@media (max-width: 768px) {
+  .clients-section {
+    padding: 60px 20px;
+  }
+
+  .title {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+
+  .clients-grid {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+
+  .client-card {
+    width: 140px;
+    height: 80px;
+    padding: 10px;
+  }
+
+  .client-card img {
+    height: 60px;
+  }
+}

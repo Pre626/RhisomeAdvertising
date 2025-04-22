@@ -71,12 +71,16 @@ body, html {
  
 .icon {
   position: absolute;
-  width: 50px;
-  opacity: 0; 
+  width: 10vw; /* Or 15vw depending on size you want */
+  max-width: 100px;
+  min-width: 40px;
+  height: auto;
+  opacity: 0;
   animation: float 4s infinite ease-in-out, fadeInIcons 0.5s ease-out forwards;
-  animation-delay: 0s, 0.6s; 
+  animation-delay: 0s, 0.6s;
   z-index: 1;
 }
+
 
 .icon1 {
   top: 40%;
@@ -162,4 +166,79 @@ body, html {
 }
 .button-wrapper {
   margin-bottom: 80px;
+}
+@media (max-width: 1024px) {
+  .main-heading {
+    font-size: 120px;
+    line-height: 150px;
+  }
+
+  .astronaut {
+    width: 250px;
+    height: auto;
+    transform: translateX(-50%) translateY(70%);
+  }
+
+  .icon {
+    width: 100px;
+    height: auto;
+  }
+
+  .icon1, .icon2, .icon3, .icon4 {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-heading {
+    font-size: 80px;
+    line-height: 100px;
+    padding-top: 100px;
+  }
+
+  .astronaut {
+    width: 200px;
+    transform: translateX(-50%) translateY(80%);
+  }
+
+  .icon1, .icon2, .icon3, .icon4 {
+    width: 80px;
+    height: 80px;
+  }
+
+  .custom-button {
+    margin-top: 20px;
+    width: 200px;
+    height: 45px;
+    font-size: 14px;
+  }
+
+  .button-wrapper {
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-heading {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .astronaut {
+    width: 150px;
+    transform: translateX(-50%) translateY(90%);
+  }
+
+  .icon1, .icon2, .icon3, .icon4 {
+    width: 60px;
+    height: 60px;
+  }
+
+  .custom-button {
+    width: 180px;
+    height: 40px;
+    font-size: 12px;
+  }
 }

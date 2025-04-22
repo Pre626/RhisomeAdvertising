@@ -18,8 +18,7 @@ const Agency = () => {
         </div>
         <div className="hero-para">
           <p>
-            TRANSFORMING YOUR DIGITAL PRESENCE WITH UNIQUE<br />
-            IDEAS AND MIND BLOWING DESIGNS.
+            TRANSFORMING YOUR DIGITAL PRESENCE WITH UNIQUE IDEAS AND MIND BLOWING DESIGNS.
           </p>
           <button className="hero-button">READ MORE</button>
         </div>

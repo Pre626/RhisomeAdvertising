@@ -197,3 +197,102 @@
   border-radius: 25px;
   max-width: 350px;
 }
+@media screen and (max-width: 768px) {
+  .services-section-why {
+    flex-direction: column;
+    padding: 30px 20px;
+    gap: 20px;
+  }
+
+  .services-left {
+    flex: 1 1 100%;
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .services-title1 {
+    font-size: 36px;
+    margin-left: 0;
+    line-height: 1.2;
+    white-space: normal;
+    text-align: center;
+  }
+  .rhisome-head{
+    font-size: 76px;
+    margin-left: 0;
+    line-height: 1.2;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .services-desc {
+    font-size: 14px;
+    margin-left: 0;
+    margin-top: 1rem;
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  .whychoose-image {
+    width: 100px;
+    margin: 10px auto 0 auto;
+  }
+
+  .astronaut-image {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 80px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .services-right {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .why-card,
+  .small-card,
+  .extrasmall-card {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .rooted-card {
+    margin-left: auto;
+    text-align: left;
+    margin-right: auto;
+    margin-top: 20px;
+    max-width: 90%;
+  }
+
+  .service-card h3 {
+    font-size: 28px;
+  }
+
+  .service-card li {
+    font-size: 16px;
+  }
+
+  .title-with-astronaut {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .services-heading {
+    align-items: center;
+    text-align: center;
+  }
+
+  .service-top-paragraph {
+    font-size: 12px;
+    text-align: left;
+  }
+}
