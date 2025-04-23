@@ -5,6 +5,14 @@
   box-sizing: border-box;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+  width: 100%;
+}
+
+
 
 .hero {
   width: 100vw;
@@ -179,90 +187,107 @@
   height: auto;         
   position: absolute;
 }  
-
 @media (max-width: 768px) {
   .hero {
-    flex-direction: column;
-    padding: 40px 20px;
+    margin-top: -220px;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    background-image: url('/rhisomebg.svg');
+    background-repeat: no-repeat;
+    background-position: center;         
+    background-size: 200%;         
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
     gap: 20px;
   }
 
+  .astro-wrapper{
+    margin-top: -220px;
+  }
+
   .hero-left-wrapper {
-    width: 100%;
-    text-align: left;
+    flex: 1;
+    max-width: 50%;
+    padding-right: 10px;
   }
 
   .hero-left,
   .hero-left2 {
     margin-left: 0;
-    font-size: 20px;
+    font-size: 16px;
+    line-height: 1.2;
   }
 
   .hero-para {
+    font-size: 12px;
+    padding: 0;
     margin-left: 0;
-    font-size: 14px;
-    padding: 0 10px;
+  }
+
+  .hero-button {
+    font-size: 12px;
+    padding: 8px 16px;
   }
 
   .hero-right {
-    width: 100%;
+    flex: 1;
+    max-width: 50%;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    position: relative;
   }
 
-  .astro-wrapper {
-    margin-top: 120px;
-    top: 0;
-  }
-
-  .heart-icon {
-    width: 26px;
-    height: 32px;
+  .astronaut-img {
+    width: 140px;
+    margin: 0;
   }
 
   @media (max-width: 768px) {
-    .astronaut-img {
-      width: 220px;
-      margin-left: 0;
+    .brand-label {
+      top: -180px;
+      left: 75%;
+      transform: translateX(-50%);
+      color: #3C533F;
+    }
+  
+    .brand-text {
+      font-size: 20px;
+      margin-top: -10px;
+    }
+  
+    .heart-icon {
+      width: 24px;
+      height: 28px;
+    }
+  
+    .text-growth,
+    .text-web,
+    .text-design {
+      font-size: 20px;
+      position: absolute;
+      color: #3C533F;
+    }
+  
+    .text-growth {
+      top: -60px;
+      left: -15%;
+      transform: rotate(-90deg);
+    }
+  
+    .text-web {
+      top: -80px;
+      right: 10%;
+      transform: rotate(-90deg);
+    }
+  
+    .text-design {
+      top: 20px;
+      left: 70%;
+      transform: translateX(-50%);
     }
   }
-
-  .brand-label {
-    top: 70px;
-    left: 65%;
-    transform: translateX(-50%);
-    color:#3C533F;
-  }
-  .brand-text{
-    font-size: 30px;
-  }
-
   
-  .text-growth,
-  .text-web,
-  .text-design{
-    font-size: 30px;
-    position: absolute;
-    color:#3C533F;
-  }
-
-  .text-growth {
-    top: 60%;
-    left: 10%;
-  }
-
-  .text-web {
-    top: 50%;
-    right: 25%;
-  }
-
-  .text-design {
-    top: 95%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
 
   @media (max-width: 768px) {
     .icon {

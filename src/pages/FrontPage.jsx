@@ -11,22 +11,27 @@ function FrontPage() {
 
   return (
     <div className="hero-container">
-      <h1 className="main-heading">
+      {/* 1. Heading */}
+      <h1 className="main-heading heading-animate">
         RHISOME <br /> ADVERTISING
       </h1>
 
+      {/* 2. Astronaut & Button */}
+      <div className="astro-button-group">
+        <img src="/astronaut.png" className="astronaut astronaut-animate" alt="astronaut" />
+        <div className="button-wrapper button-animate">
+          <button className="custom-button" onClick={handleClick}>
+            Start the Journey
+          </button>
+        </div>
+      </div>
+
+      {/* 3. Icons */}
       <div className="icon-container">
         <img src="/comments.png" className="icon icon1" alt="comment" />
         <img src="/love.png" className="icon icon2" alt="like" />
         <img src="/like.png" className="icon icon3" alt="like" />
         <img src="/like.png" className="icon icon4" alt="like" />
-        <img src="/astronaut.png" className="astronaut" alt="astronaut" />
-      </div>
-
-      <div className="button-wrapper">
-        <button className="custom-button" onClick={handleClick}>
-          Start the Journey
-        </button>
       </div>
     </div>
   );

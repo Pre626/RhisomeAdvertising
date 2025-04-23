@@ -48,16 +48,32 @@
     max-width: 600px;
   }
   
+  .gallery-item {
+    width: 100%;
+    aspect-ratio: 4 / 5; /* Adjust this if 3rd/4th image has a different aspect */
+    overflow: hidden;
+    border-radius: 16px;
+  }
+  
+  .zoomed-vertical {
+    transform: scaleY(1.4); /* Vertical zoom */
+    transition: transform 0.3s ease;
+    z-index: 2;
+  }
+  
+  .shrink {
+    transform: scale(0.7);
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+  }
+  
   .gallery-item img {
     width: 100%;
+    height: auto;
+    object-fit: cover;
     border-radius: 16px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  }
-  .gallery-item2{
-    margin-top: -140px;
-    width: 100%;
-    border-radius: 16px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
   }
   
   .projects-right {
