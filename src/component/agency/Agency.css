@@ -189,21 +189,20 @@
 }  
 @media (max-width: 768px) {
   .hero {
-    margin-top: -220px;
-    flex-direction: row; 
-    flex-wrap: wrap;
+    margin-top: -40px; /* remove the -220px */
+    flex-direction: column; /* stack vertically */
     background-image: url('/rhisomebg.svg');
     background-repeat: no-repeat;
     background-position: center;         
-    background-size: 200%;         
+    background-size: cover;         
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 40px 20px;
     gap: 20px;
   }
 
   .astro-wrapper{
-    margin-top: -220px;
+    margin-top: -80px;
   }
 
   .hero-left-wrapper {
@@ -245,7 +244,7 @@
 
   @media (max-width: 768px) {
     .brand-label {
-      top: -180px;
+      top: -20px;
       left: 75%;
       transform: translateX(-50%);
       color: #3C533F;
@@ -270,19 +269,19 @@
     }
   
     .text-growth {
-      top: -60px;
-      left: -15%;
+      top: 90px;
+      left: -5%;
       transform: rotate(-90deg);
     }
   
     .text-web {
-      top: -80px;
+      top: 70px;
       right: 10%;
       transform: rotate(-90deg);
     }
   
     .text-design {
-      top: 20px;
+      top: 170px;
       left: 70%;
       transform: translateX(-50%);
     }
